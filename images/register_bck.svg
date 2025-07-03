@@ -1,0 +1,20 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="registerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b5e20;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2e7d32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#388e3c;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="registerPattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="60" cy="60" r="30" stroke="#00d4aa" stroke-width="2" fill="none" opacity="0.2"/>
+      <circle cx="60" cy="60" r="15" fill="#00d4aa" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#registerGrad)"/>
+  <rect width="100%" height="100%" fill="url(#registerPattern)"/>
+  <polygon points="400,200 600,200 500,400" fill="#f78166" opacity="0.1"/>
+  <polygon points="1400,600 1600,600 1500,800" fill="#58a6ff" opacity="0.1"/>
+  <circle cx="1600" cy="200" r="120" fill="#00d4aa" opacity="0.15"/>
+  <circle cx="300" cy="800" r="100" fill="#58a6ff" opacity="0.15"/>
+  <text x="960" y="900" font-family="Arial, sans-serif" font-size="36" fill="#00d4aa" opacity="0.4" text-anchor="middle">JOIN US TODAY</text>
+</svg>

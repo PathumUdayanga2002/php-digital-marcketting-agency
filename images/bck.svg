@@ -1,0 +1,19 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3f51b5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7986cb;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="50" cy="50" r="2" fill="#58a6ff" opacity="0.3"/>
+      <path d="M20,20 L80,20 L80,80 L20,80 Z" stroke="#58a6ff" stroke-width="1" fill="none" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad1)"/>
+  <rect width="100%" height="100%" fill="url(#circuit)"/>
+  <circle cx="300" cy="200" r="150" fill="#58a6ff" opacity="0.1"/>
+  <circle cx="1600" cy="800" r="200" fill="#00d4aa" opacity="0.1"/>
+  <polygon points="800,100 900,300 700,300" fill="#f78166" opacity="0.1"/>
+  <text x="960" y="540" font-family="Arial, sans-serif" font-size="48" fill="#58a6ff" opacity="0.3" text-anchor="middle">DIGITAL MARKETING</text>
+</svg>

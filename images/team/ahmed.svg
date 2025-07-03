@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#e1e6ef"/>
+  <circle cx="100" cy="80" r="30" fill="#4caf50"/>
+  <path d="M70 140c0-16.57 13.43-30 30-30s30 13.43 30 30v20H70v-20z" fill="#4caf50"/>
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#121921">Ahmed Khan</text>
+</svg>
