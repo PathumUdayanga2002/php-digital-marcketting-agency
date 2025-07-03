@@ -39,6 +39,7 @@ if (isset($_GET['logout'])) {
       <div class="auth-buttons">
         <?php if (isset($_SESSION["username"])): ?>
           <span class="welcome-text">Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</span>
+          <a href="messages.php" class="btn-secondary">Messages</a>
           <a href="index.php?logout=1" class="btn-secondary">Logout</a>
         <?php else: ?>
           <a href="login.php" class="btn-secondary">Login</a>

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       
       // Check if user is logged in
@@ -33,9 +33,35 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'login.php';
         return;
       }
+
+      const formData = new FormData(contactForm);
       
-      alert('Thank you for your message! We will get back to you soon.');
-      contactForm.reset();
+      try {
+        const response = await fetch('handle_contact.php', {
+          method: 'POST',
+          body: formData,
+          credentials: 'same-origin',
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        
+        if (data.success) {
+          alert(data.success);
+          contactForm.reset();
+        } else if (data.error) {
+          alert('Error: ' + data.error);
+        }
+      } catch (error) {
+        alert('An error occurred while sending your message. Please try again.');
+        console.error('Error:', error);
+      }
     });
   }
 
